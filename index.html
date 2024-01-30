@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9a902db8c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm<span> Kaushiki</span><br> Singh From Lucknow</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------about--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./img/picture.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Name - Kaushiki Singh</p>
+                       <p> Student at University of Lucknow
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing Language:</span><br>Javascript, HTML5, CSS, C++, Java,SQL</li>
+                            <li><span>Tools:</span><br>Microsoft Visual Studio, DevC++,SQLyog, Windows</li>
+                            <li><span>Soft Skills:</span><br>Leadership, Group discussion, Presentation, Communication, Teamwork ,Role</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Lucknow, Lucknow</span><br>Master of Computer Application 2022-2024</li>
+                            <li><span>Beni Madhav Gopi Nath Inter Collage, Sant Kabir Nagar</span><br>Intermediate - PCM (Physics,Chemistry,Mathematics) 2016-2018</li>
+                            <li><span>Beni Madhav Gopi Nath Inter Collage </span><br>High School - PCM (Physics,Chemistry,Mathematics) 2014-2016</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Computer Network</span><br>Gave a Workshop on Computer Network implemented and maintained Cisco packet networks and Web Development</li>
+                            <li><span>Feedback</span><br>Received Excellent feedback from Faculty</li>
+                            <li><span> Amazon Clone Website </span><br>Build Amazon Clone Website Using Html,Css ,Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------Services-Section-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>Expertise in diverse programming languages and software development methodologies, ensuring efficient and scalable solutions  challenges.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in front-end web development, creating visually appealing and responsive websites using HTML, CSS, and JavaScript. Transforming designs into seamless user experiences is my expertise.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Effective problem solvers, adept at analyzing and innovating solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------Portfolio-Section--------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img3/amazon clone .jpg" alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone Website</h3>
+                        <p>Implemented a fully functional Amazon clone website, showcasing strong proficiency in web development</p>
+                           <a href="https://github.com/kaushiki2104/Amazon-website/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="./img4/game.jpg" alt="">
+                        <div class="layer">
+                            <h3>Stone Paper Scisior Game</h3>
+                            <p>Create a simple Rock-Paper-Scissors game using HTML for structure, CSS for styling, and JavaScript for logic.</p>
+                               <a href="https://stone-paper-scissors-game-kaushiki.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        </div>
+                        <div class="work">
+                            <img src="./img5/game2.jpg" alt="">
+                            <div class="layer">
+                                <h3>Tic Tac Toe Game</h3>
+                                <p>Build a Tic Tac Toe game with HTML CSS and JavaScript, allow two players to take turns, and dynamically display the winner or a draw.</p>
+                                   <a href="https://tic-tac-toe-gamekaushiki.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------Contact-Section------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kaushikisinghlko@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8114149941</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kaushiki-singh-77415b296?"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kaushiki2104"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                    <a href="./img/Kaushiki-Singh-resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
